@@ -1,6 +1,7 @@
 .navbar {
     background-color: #f8f8f8;
     border-bottom: 1px solid #e7e7e7;
+    padding: 10px;
 }
 
 .navbar__item {
@@ -18,6 +19,11 @@
 
 .btnSection{
     margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
@@ -52,4 +58,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .dashboardBanner {
+        margin-bottom: 10px;
+    }
+
+    .navbar__item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnSection {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
 }
