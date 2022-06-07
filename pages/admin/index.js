@@ -15,6 +15,7 @@ export default function Index() {
     return (
         <div className={styles.container}>
             <h1>Admin</h1>
+            {console.log("Admin Page is beginning to render")}
             <button onClick={() => signIn(undefined, { callbackUrl: "/admin/dashboard" })}>Sign in</button>
         </div>
     )
